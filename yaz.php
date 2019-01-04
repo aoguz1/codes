@@ -28,49 +28,23 @@ include 'header.php';
 </div>
 
 
-
-
 <?php 
-$ders=$_POST["ders"];
-$baslik=$_POST["baslik"];
-$icerik=$_POST["icerik"];
-
-
+include 'baglan.php';
+include "ekle.php";
  ?>
 
-  <?php
-$servername = "localhost";
-$username = "fatih";
-$password = "123578951";
-$dbname = "final";
 
 
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if (isset($ders,$baslik,$icerik)) {
-    
-$sql = "INSERT INTO ders (ders,baslik,icerik)
-    VALUES ('$ders', '$baslik','$icerik')";
-} 
 
-    // use exec() because no results are returned
-    $conn->exec($sql);
-    echo "New record created successfully";
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
 
-$conn = null;
-?> 
+
+
+
 
 
 
 
  <?php 
 
-include "footer.php"
+include "footer.php";
   ?>

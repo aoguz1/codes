@@ -12,6 +12,12 @@ body{
   background-color: grey;
   overflow-x: hidden;
   padding-top: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
 }
 .navbarGrid
 {
@@ -49,4 +55,7 @@ text-align: center;
 .icerikGrid{
 	height: 200px;
 	overflow: scroll;
+}
+input[name="ara"]{
+width: 120px;	
 }

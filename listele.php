@@ -1,29 +1,10 @@
-<?php 
-include"header.php";
- ?>
-
-<div class="listeleGrid"><div class="d-flex flex-wrap">         
-
-
+<?php include 'header.php'; ?>
+<div class="listeleGrid"><div class="d-flex flex-wrap"> 
 
 <?php 
-
-$servername = "localhost";
-$username = "fatih";
-$password = "123578951";
-$dbname = "final";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include 'baglan.php';
 $sql = "SELECT ders,baslik,icerik FROM ders";
 $result = $conn->query($sql);
-
-
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {   ?>
@@ -39,15 +20,15 @@ if ($result->num_rows > 0) {
 </div>
 </div>
 
-
-    
-
 <?php }
 } else {
     echo "veri girilmedi";
 }
 
-$conn->close();
+include "footer.php";
 ?> 
 </div></div>
- <?php include"footer.php" ?>
+
+
+
+ 
