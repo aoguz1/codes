@@ -6,14 +6,10 @@ body{
 	height: 100%;
 	width: 200px;
 	background: linear-gradient(to bottom, #FFFDE4, #005AA7B3);
-
-
-
 	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
-	
 	border-radius: 2px 2px 2px 2px;
 	overflow-x: hidden;
 	padding-top: 15px;
@@ -23,7 +19,6 @@ body{
 	display: -o-flex;
 	display: flex;
 	justify-content: center;
-
 	-webkit-box-shadow: -3px 0px 10px 4px rgba(69,69,69,1);
 	-moz-box-shadow: -3px 0px 10px 4px rgba(69,69,69,1);
 	box-shadow: -5px 1px 13px 2px rgba(69, 69, 69, 0.43),4px 0px 2px -3px rgba(69, 69, 69, 0.74);
@@ -42,7 +37,7 @@ box-shadow: -5px 1px 13px 2px rgba(69,69,69,1);*/
 	margin-top: 25px;
 }
 .sidebar a{
-
+font-family: 'Lato', sans-serif;
 	text-decoration: none;
 	font-weight: bold;
 	color: #6461A0;
@@ -85,4 +80,51 @@ box-shadow: -5px 1px 13px 2px rgba(69,69,69,1);*/
 .icerikGrid{
 	height: 200px;
 	overflow: scroll;
+}
+/*form*/
+.formGrid{
+	margin-left: 210px;
+	background-color: #f1f1f1;
+	width: calc(100%-230px);
+	height: 200px;
+}
+form{
+	margin: 100px;
+}
+.input-field{
+	position: relative;
+	width: 200px;
+	height:44px;
+	line-height: 44px;
+}
+label{
+	transition: 0.2s all;
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	cursor:text;
+	color:#2f4858; 
+}
+input{
+	width: 100%;
+	outline: 0;
+	border: 0;
+	padding: 0.5rem 0;
+	border-bottom: 2px solid #2f4858;
+	color: #2f4858;
+}
+input:invalid {
+  outline: 0;
+}
+input:focus,
+input:valid{
+	border-color: ;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 14px;
+  top: -24px;
+  color: #2f4858;
 }

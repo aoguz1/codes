@@ -10,9 +10,11 @@ $baslik = isset($_POST["baslik"]) ? $_POST["baslik"] : null;
 $icerik = isset($_POST["icerik"]) ? $_POST["icerik"] : null;
 
 } 
-else if(!$ders){
-	
-	echo "ders giriniz";
+else if(!$ders empty($ders))
+{
+    
+    #echo "ders giriniz";
+    echo "null";
 }
 else if(!$baslik)
 {
