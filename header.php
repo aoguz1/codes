@@ -12,22 +12,16 @@
 <body>
 <div id="sidebar" class="sidebar">
 	
-<nav>
-	<div class="navbarGrid">
-
-	<div class="logo"><a href=""><img src="" alt=""></a></div>
-	<ul class="navList">
-
-		<a href=""><li>Anasyfa</li></a>
-		<a href="yaz.php"><li>Yaz</li></a>
-		<a href="listele.php"><li>Listele</li></a>
-		<li><input type="text" name="ara"><br> <br><input type="submit" value="gönder"></li>
-
-	</ul>
+<ul>
+	<li><a href=""><i class="fas fa-home mr-2"></i>ANASAYFA</a></li>
+	<li><a href=""><i class="fas fa-list-ul mr-2"></i>LİSTELE</a></li>
+	<li><a href=""><i class="fas fa-pen-square mr-2"></i>YAZ</a></li>
+</ul>
+	
 	
 </div>
 
-</nav>
+
 
 
 
