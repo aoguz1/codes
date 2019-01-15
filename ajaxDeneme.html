@@ -1,0 +1,61 @@
+<div id="surada" style="width:100vw;height:30vh;background-color:pink;"></div>
+<div id="huuu1" style="width:100vw;height:30vh;background-color:pink;">hhhhhhhuuuuu</div>
+<form method="post">
+  <input id="kitap" type="" name="ders">
+
+
+</form>
+
+
+
+<script type="text/javascript">
+var dersGirdi=document.getElementsById("kitap").value;
+
+	var ft={};
+
+ft.ajax=function(sayfa,metin,nerede,neyapalim){
+	nerede=nerede?nerede:"";
+	neyapalim=neyapalim?neyapalim:"";
+
+	var xhr = new XMLHttpRequest();
+
+//xhr.open('GET', sayfa+'?id=some-unique-id');
+xhr.open('GET', sayfa+'/?'+metin);
+xhr.onload = function() {
+    if (xhr.status === 200) {
+//        alert('User\'s name is ' + xhr.responseText);
+       if(nerede!=""){
+        document.getElementById(nerede).innerHTML= xhr.responseText;
+}
+       if(neyapalim!=""){
+        neyapalim( xhr.responseText);
+}
+    
+    }
+
+    else {
+        alert('Request failed.  Returned status of ' + xhr.status);
+    }
+};
+xhr.send();
+}
+
+
+//var degisken1="hayırlı günler";
+//var ajax1metin="submit&&ders="+degisken1+"&&baslik=furkan&&icerik=selamlar";
+var ajax1metin="submit&&ders=".dersGirdi."&&baslik=furkan&&icerik=selamlar";
+console.log("sss");
+ft.nene=function(metin){
+console.log(metin);
+
+document.getElementById("huuu1").innerHTML=metin;
+}
+//ekleAjax.php/?submit&&ders=fatih&&baslik=furkan&&icerik=selamlar
+//
+alert(000000);
+ft.ajax("ekleAjax.php",ajax1metin,"surada",ft.nene);
+alert(11100);
+ft.ajax("ekleAjax.php",ajax1metin+" 222aaaaaaaaa","",ft.nene);
+alert(22222);
+ft.ajax("ekleAjax.php",ajax1metin+" 33333ahanda bu... ","surada","");
+</script>
