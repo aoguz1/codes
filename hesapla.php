@@ -49,5 +49,5 @@
 
 	</div>
 
-
+<script type="text/javascript" src="js/hesap.js"></script>
 	<?php include "footer.php" ?>

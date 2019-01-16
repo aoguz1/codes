@@ -22,6 +22,7 @@
 			<li><a href="listele.php"><i class="fas fa-list-ul mr-2"></i>LİSTELE</a></li>
 			<li><a href="yaz.php"><i class="fas fa-pen-square mr-2"></i>YAZ</a></li>
 			<li><a href="hesapla.php"><i class="fas fa-calculator mr-2"></i>HESAPLA</a></li>
+			<li><a href="ajaxArge.php"><i class="fas fa-database mr-2"></i>AJAX</a></li>
 		</ul>
 
 
