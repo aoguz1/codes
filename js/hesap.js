@@ -1,6 +1,7 @@
 
     var yaz = document.getElementById("tuslar").getElementsByTagName("button");
     var lcd =document.getElementById("lcdPanel");
+    var lcdSonuc=document.getElementById("lcdSonuc");
     var sayilar=new Array();
 for (let key = 0; key < yaz.length; key++) {
 
@@ -14,30 +15,30 @@ for (let key = 0; key < yaz.length; key++) {
 
 }
 function sil(){
-    var lcd =document.getElementById("lcdPanel");
+   /* var lcd =document.getElementById("lcdPanel");*/
    var delWriter=lcd.innerHTML.length;
     lcd.innerHTML=lcd.innerHTML.substring(0,--delWriter);
+    
+    lcdSonuc.innerHTML="";
+
 }
 
-$( document ).ready(function() {
-    console.log( "ready!" );
+var islemTus = document.getElementById("operatorTus").getElementsByTagName("button");
+for (let i = 0; i < islemTus.length; i++) {
+   islemTus[i].addEventListener("click",function(){
 
- setInterval( function topla(){
-var arti =lcd.innerHTML.split("+");
-console.log(arti);
 
-var topla=0;
-arti.forEach(element => {
-    element = parseInt(element)?element:0;
-    var eksi=element.split("-");
-    console.log(eksi);
-    topla=parseInt(element)+topla;
+var sonuc =+ eval(lcd.innerHTML);
+        
+  document.getElementById("lcdSonuc").innerHTML= sonuc;
+        
+
+
+   });
     
-});
-document.getElementById("lcdSonuc").innerHTML=topla;
-},9000);
+}
 
-});
+
 
 
 

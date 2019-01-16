@@ -13,9 +13,9 @@
 					<button onclick="sil()">C</button></div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-7 ">
-					<div id="tuslar" class="row islemTusNumber">
+			<div id="tuslar" class="row">
+				<div  class="col-7 ">
+					<div id="operatorTus" class="row islemTusNumber tuslar">
 						
 						<div class="col-4"><button >9</button></div>
 						<div class="col-4"><button>8</button></div>
@@ -28,19 +28,18 @@
 						<div class="col-4"><button>1</button></div>
 						<div class="col-8"><button>0</button></div>
 						<div class="col-4"><button>.</button></div>
-						<div class="col-4"><button>+</button></div>
-						<div class="col-4"><button>-</button></div>
+						
 					</div>
 				</div>
-				<div class="col-5 ">
+				<div  class="col-5 ">
 					<div class="row islemTusOperatör">
-						<div class="col-6"><button>&</button></div>
-						<div class="col-6"><button>&</button></div>
+						<div class="col-6"><button>(</button></div>
+						<div class="col-6"><button>)</button></div>
 						<div class="col-6"><button>-</button></div>
 						<div class="col-6"><button>%</button></div>
-						<div class="col-6"><button>x</button></div>
+						<div class="col-6"><button>*</button></div>
 						<div class="col-6"><button>/</button></div>
-						<div class="col-6"><button onclick="topla()">+</button></div>
+						<div class="col-6"><button>+</button></div>
 						<div class="col-6"><button>=</button></div>
 					</div>
 				</div>
