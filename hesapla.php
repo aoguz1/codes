@@ -1,7 +1,8 @@
 <?php include 'header.php'; ?>
 
 <div class="contentGrid">
-	<div id="suraya"></div>
+
+	<div class="arkaPlan pt-5">
 	<div class="calculatorGrid mx-auto my-5 p-5">
 		<div class="row mb-3">
 			<div class="col-9 ">
@@ -46,7 +47,7 @@
 			</div>
 		</div>
 
-
+</div>
 	</div>
 
 <script type="text/javascript" src="js/hesap.js"></script>

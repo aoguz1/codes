@@ -1,4 +1,8 @@
 
+var hesapArka=    document.querySelector(".arkaPlan");
+var yükseklik = window.innerHeight;
+hesapArka.style.height=yükseklik+"px";
+    
     var yaz = document.getElementById("tuslar").getElementsByTagName("button");
     var lcd =document.getElementById("lcdPanel");
     var lcdSonuc=document.getElementById("lcdSonuc");
@@ -28,15 +32,18 @@ for (let i = 0; i < islemTus.length; i++) {
    islemTus[i].addEventListener("click",function(){
 
 
-var sonuc =+ eval(lcd.innerHTML);
+var sonuc = eval(lcd.innerHTML);
         
-  document.getElementById("lcdSonuc").innerHTML= sonuc;
-        
-
-
+lcdSonuc.innerHTML= sonuc;
+  
    });
     
 }
+
+
+
+
+
 
 
 
